@@ -83,9 +83,10 @@ h2{font-family:var(–display);font-weight:700;font-size:clamp(1.9rem,4vw,2.7rem
 .lede{color:#b3c0cd;max-width:38em;margin:0 0 34px}
 
 /* game */
-.game{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:34px;align-items:start}
+.game{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:34px;align-items:start;  -webkit-user-select: none;user-select: none;-webkit-touch-callout: none;      /* iOS long-press menu */-webkit-tap-highlight-color: transparent;}
 .stage{position:relative;background:linear-gradient(#0d1420,#0a0f17);border:1px solid var(–line);border-radius:22px;overflow:hidden;touch-action:none}
 #gameCanvas{display:block;width:100%;height:auto;touch-action:none;cursor:pointer}
+#startBtn{background:#ffa06c;color:#1a0d05}
 .overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:22px;background:rgba(5,7,10,.82)}
 .overlay[hidden]{display:none}
 .overlay h3{font-family:var(–display);font-size:1.7rem;margin:0}
